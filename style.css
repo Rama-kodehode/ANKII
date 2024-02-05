@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(222, 222, 216);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* align-items: end; */
+  /* flex-direction: column; */
+  margin-top: 25vh;
+  gap: 5px;
+}
+
+.display-container {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  margin: 20px 20vh;
+  min-height: 250px;
+  max-width: 250px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.cards {
+  width: calc(50px); /* 20% for each card with 5px gap between them */
+  height: 0;
+  padding-bottom: calc(25px); /* Maintain aspect ratio for a square */
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  display: none;
+}

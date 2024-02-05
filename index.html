@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANKII</title>
+    <link rel="stylesheet" href="style.css " />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="input-container">
+      <label for="kanji-input">KANJI</label>
+      <input type="text" id="kanji-input" />
+      <label for="romanji-input">ROMANJI</label>
+      <input type="text" id="romanji-input" />
+      <button onclick="getUserInput()">ADD</button>
+      <button onclick="clearBtn()">StorageClear</button>
+      <button onclick="playBtn()">PLAY</button>
+    </div>
+    <div class="display-container">
+      <ul class="words-li"></ul>
+    </div>
+    <main>
+      <div class="cards-container"></div>
+      <input type="text" id="play-romanji-input" />
+      <button onclick="checkRomanji()" class="playRomanji">ENTER</button>
+    </main>
+  </body>
+</html>
